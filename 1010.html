@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="margin: auto;">Решение алгоритмисеской задачи</h1>
+    <p>Принадлежит ли число X промежутку?</p>
+    <p>Значение X: <span id="X">20</span></p>
+    <p>Значение a: <span id = "a">10</span></p>
+    <p>Значение b: <span id = "b">30</span></p>
+    <p id="verify">Оценить</p>
+    <p>Результат: <span id="result"> </span></p>
+    
+</body>
+<script > function verify() {
+    console.log("X, a, b")
+    let X = parseInt(valueX.innerText);
+    let a = parseInt(valuea.innerText);
+    let b = parseInt(valueb.innerText);
+    console.log(X, a, b)
+
+
+    if (X >=a && X <= b) {
+        result = "Принадлежит"
+        document.getElementById("result").innerText = result;
+    } else {
+        result = "Не принадлежит"
+        document.getElementById("result").innerText = result;
+    }
+}
+const valueX = document.getElementById("X");
+const valuea = document.getElementById("a");
+const valueb = document.getElementById("b");
+
+const Verify = document.getElementById("verify");
+Verify.addEventListener('click', verify);
+</script>
+</html>
