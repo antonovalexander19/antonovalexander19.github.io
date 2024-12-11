@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Команда 1 забила A мячей, команда 2 забила B мячей какая команда победила, и с какой разницей</h2>
+    <form action="https://www.bing.com/">
+    <p>Для поисковика <input type="hidden" name="search" value="search"></p>
+    <p>Команда 1 <input type="number" id="A" value="3"></p>
+    <p>Команда 2 <input type="number" id="B" value="0"></p>
+    <p>Кто победил: <input id="result1" name="result" value="не найден"></p>
+    <p>Какая разница: <input id="result2" name="result2" value="не найден"></p>
+    <p>Нахождение победителя <input type="button" id="verify1" value="Проверить"></p>
+    <p>Нахождение разницы мячей <input type="button" id="verify2" value="Проверить"></p>
+    <p>Отправка результатов <input type="submit" id="send" value="Отправить"></p></form>
+        
+</body>
+<script> 
+    function verify1(){
+        console.log("A,B")
+        let A = parseInt(valueA.value)
+        let B = parseInt(valueB.value)
+        console.log(A,B);
+        if (A > B) {
+        result1 = "Команда1"
+    } else if (A < B) {
+        result1 = "Команда2"
+        
+    } else  {
+        result1 = "Ничья"
+    }
+    document.getElementById("result1").value = result1;
+}
+function verify2(){
+        console.log("A,B")
+        let A = parseInt(valueA.value)
+        let B = parseInt(valueB.value)
+        console.log(A,B);
+
+        if (A > B) {
+        result2 = A-B
+    } else if (A < B) {
+        result2 = B-A
+        
+    } else {
+        result2 = 0
+    }
+    document.getElementById("result2").value = result2;
+}
+const valueA = document.getElementById("A")
+const valueB= document.getElementById("B")
+const Verify1 = document.getElementById("verify1");
+const Verify2 = document.getElementById("verify2");
+Verify1.addEventListener('click', verify1);
+Verify2.addEventListener('click', verify2);
+
+
+</script>
+</html>
