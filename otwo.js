@@ -1,5 +1,5 @@
 function find_editf(){
-    const item = document.getElementById('new1')
+    const item = document.getElementById('new')
     console.log(item.innerText)
     item.innerHTML=<b>Antonov</b>
 }
@@ -14,4 +14,4 @@ function find_editt(){
     item.innerHTML=<b>Antonov</b>
 }
 const node_for_click = document.getElementById("for_click")
-node_for_click.addEventListener("click",find_editf,find_edits,find_editt)
+node_for_click.addEventListener("click",find_editf)
