@@ -1,0 +1,30 @@
+.main>p {
+    color: pink;
+    font-size: 40px;
+    font-weight: bold
+
+}
+span{
+    font-style: italic;
+    color: darkred;
+}
+.main{
+    display: flex;
+    margin: 1
+}
+.main>img {
+    text-align: center;
+    width: 40%;
+}
+p.ours {
+    color: pink;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.main>p>a>img {
+    width: 60px;
+    height: 60px;
+    float: right;
+}

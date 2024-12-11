@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.main>li>ul {
+    list-style: none;
+    color: blue;
+    font-size: 24px;
+    font-weight: 700;
+}
+.main>li>ul>li>a>img {
+    width: 40px;
+    height: 40px;
+}
+.main>li>ul>li>img {
+    width: 100px;
+    height: 100px;
+}
+p {
+    color: pink;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    
+}

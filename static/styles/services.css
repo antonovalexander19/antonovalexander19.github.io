@@ -1,0 +1,32 @@
+table {
+    border: 1px solid;
+    border-color: red;
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    table-layout: fixed;
+    background: url('back.jpg');
+    font-size: 40px
+    
+}
+
+
+.main>p {
+    color: pink;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+.title {
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+tr{
+    color: pink;
+
+}
+table>tbody>tr>td>img{
+    size: 40px;
+}
+
